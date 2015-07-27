@@ -1,6 +1,6 @@
-scalaVersion := "2.11.4"
+scalaVersion := "2.11.7"
 
-resolvers += "linter" at "http://hairyfotr.github.io/linteRepo/releases"
+resolvers += Resolver.sonatypeRepo("snapshots")
 
-addCompilerPlugin("com.foursquare.lint" % "linter_2.11" % "0.1-SNAPSHOT")
+addCompilerPlugin("org.psywerx.hairyfotr" %% "linter" % "0.1-SNAPSHOT")
 
